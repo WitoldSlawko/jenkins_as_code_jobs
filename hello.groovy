@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 
-job {
-    name 'hello-world'
+job('Hello World') {
     steps {
         shell('echo "Hello World!"')
     }
