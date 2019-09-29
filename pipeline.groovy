@@ -13,10 +13,14 @@ pipelineJob('example-pipeline') {
                 }
               }
               stage ('Unit tests') {
-                echo 'Unit testing phase'
+                steps {
+                  echo 'Unit testing phase'
+                }
               }
               stage ('Deploy') {
-                echo 'Deploy phase'
+                steps {
+                  echo 'Deploy phase'
+                }
               }
             }
         }
